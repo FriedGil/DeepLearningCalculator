@@ -9,8 +9,8 @@ df.head(5)
 data = df[["num_1", "num_2"]]
 target = df[["sum"]]
 x_train, x_valid, y_train, y_valid = train_test_split(data, target)
-x_train = np.asarray(x_valid)
-y_train = np.asarray(y_valid)
+x_train = np.asarray(x_train)
+y_train = np.asarray(y_train)
 x_valid = np.asarray(x_valid)
 y_valid = np.asarray(y_valid)
 scaler = StandardScaler()
